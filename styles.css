@@ -76,7 +76,7 @@ li {
 
 .bannerArea {
     max-width: 1440px;
-    background-image: url(/images/strom.jpg);
+    background-image: url(./images/strom.jpg);
     width: 100%;
 	height: 800px;
 	-webkit-background-size: cover;
