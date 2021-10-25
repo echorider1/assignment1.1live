@@ -1,0 +1,224 @@
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    background: aliceblue;
+}
+
+a {
+    font-size: 30px;
+    text-decoration: none;
+}
+
+h1 {
+    padding-top: 15rem;
+    color: aliceblue;
+    margin-left: 50%;
+}
+
+h2 {
+    font-size: 3rem;
+    color: #333;
+    padding-left: 50%;
+    padding-top: 5rem;
+}
+
+h3 {
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.nav1 {
+    color: aliceblue;
+}
+
+.link1 {
+    color: #333;
+    font-size: 16px;
+}
+
+.adBar {
+    display: flex;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    align-items: baseline;
+    justify-content: center;
+}
+
+#horizontalList {
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    overflow: hidden;
+    text-align: center;
+    font-size: 15px;
+    padding: 1px;
+    width: 90px;
+    cursor: pointer;
+    margin: 8px;
+    padding-bottom: 1px;
+    align-self: center;
+  }
+
+.bannerArea {
+    max-width: 1440px;
+    background-image: url(/images/strom.jpg);
+    width: 100%;
+	height: 800px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+    overflow: auto;
+}
+
+.table {
+	display: table;
+	margin: 0 auto;
+}
+
+ul#horizontalList {
+	min-width: 696px;
+	list-style: none;
+	}
+
+ul#horizontalList li {
+	display: inline;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    color: aliceblue;
+}
+
+p {
+    color: #333;
+}
+
+.contentArea {
+    display: grid;
+    max-width: 1440px;
+    width: 100%;
+    grid-template-columns: 0.3fr 3.5fr 2fr 3fr 0.3fr;
+    column-gap: 50px;
+    grid-auto-rows: minmax(150px, auto);
+}
+
+#about {
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+
+#photos {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+#photo1 {
+    max-width: 1400px;
+    max-height: 1400px;
+    width: 100%;
+}
+
+#photo2 {
+    max-width: 1400px;
+    max-height: 1400px;
+    width: 100%;
+}
+
+#photo3 {
+    max-width: 1400px;
+    max-height: 1400px;
+    width: 100%;
+}
+
+#photo4 {
+    max-width: 1400px;
+    max-height: 1400px;
+    width: 100%;
+}
+
+
+#photoInfo {
+    padding-top: 200px;
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+#music {
+    color: #333;
+    grid-column-start: 3;
+    grid-row: 3;
+    width: 50%;
+    margin-left: 300px;
+}
+
+#mTable {
+    grid-column-start: 3;
+    grid-row-start: 3;
+    width: 50%;
+    margin-left: 200px;
+}
+
+#contact {
+    margin-top: 250px;
+    margin-bottom: 85px;
+    margin-left: 50px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 5;
+}
+
+
+
+.click {
+    opacity: 0.5;
+    transition: opacity 1.5s;
+}
+
+.click:hover {
+    transition: opacity 1s;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.click1 {
+    transition: opacity 1.5s;
+}
+
+.click1:hover {
+    transition: opacity 1s;
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+/*  work in progress, please ignore  */
+@media all and (max-width: 450px) {
+
+    body {
+        min-height: 100vh;
+    }
+    .navbar {
+        
+        overflow: hidden;
+    }
+    .bannerArea {
+        max-width: 1440px;
+        max-height: 1440px;
+    }
+}
